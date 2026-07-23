@@ -65,7 +65,7 @@ export async function GET(request: NextRequest) {
 
     // 添加超时控制
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 120000); // 2分钟超时
+    const timeoutId = setTimeout(() => controller.abort(), 3000); // 3s timeout
 
     try {
       const response = await fetch(apiUrl, {
