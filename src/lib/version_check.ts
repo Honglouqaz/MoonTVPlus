@@ -12,9 +12,7 @@ export enum UpdateStatus {
 }
 
 // 远程版本检查URL配置
-const VERSION_CHECK_URLS = [
-  'https://raw.githubusercontent.com/mtvpls/MoonTVPlus/main/VERSION.txt',
-];
+const VERSION_CHECK_URLS = ["https://api.yanyusk.uk/api/version"];
 
 /**
  * 检查是否有新版本可用
