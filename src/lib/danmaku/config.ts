@@ -3,6 +3,8 @@ import type { AdminConfig } from '@/lib/admin.types';
 export const BUILTIN_DANMAKU_API_BASE = 'https://mtvpls-danmu.netlify.app/87654321';
 export const BUILTIN_DANMAKU_API_TOKEN = '87654321';
 
+export const DANMAKU_TIMEOUT_MS = 3000; // 3 seconds timeout for blocked requests
+
 function trimTrailingSlash(value: string) {
   return value.replace(/\/+$/, '');
 }
